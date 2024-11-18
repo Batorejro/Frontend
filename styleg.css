@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery .photo-container {
+    width: 33.333%;
+    position: relative;
+}
+
+.gallery .photo-container img {
+    width: 100%;
+}
+
+.gallery .photo-container .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.gallery .photo-container:hover .layer {
+    display: block;
+}
